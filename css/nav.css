@@ -12,7 +12,7 @@ nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #e5e5e5;
+  background-color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,6 +20,8 @@ nav {
   padding-left: 10px;
   padding-right: 10px;
   height: 10vh;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 nav img {
@@ -37,8 +39,6 @@ nav img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
   overflow: hidden;
 }
 
@@ -56,12 +56,13 @@ nav img {
 }
 
 .btn-user {
-  width: 120px;
+  width: 100px;
   height: 30px;
   border: none;
   border-radius: 10px;
   font-family: "Titillium Web", sans-serif;
   margin: 5px;
+  font-size: "Titillium Web", sans-serif;
 }
 
 .menu {
@@ -100,25 +101,46 @@ nav img {
   .hide {
     display: none;
   }
+  .menu {
+    width: 30px;
+    height: 30px;
+  }
+  .burger {
+    width: 15px;
+  }
   nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 999;
+  }
+  nav img {
+    width: 60px;
+    height: 80px;
   }
   .navLink {
     display: block;
     position: absolute;
-    top: 15%;
+    top: 100%;
     text-align: left;
     right: 0;
     background-color: rgba(0, 0, 0, 0.774);
     color: white;
     padding: 20px;
+    z-index: -1;
+  }
+  .navLink li {
+    font-size: 16px;
   }
   .user {
     position: relative;
     right: 0;
+  }
+  .btn-user {
+    font-size: 16px;
   }
   .fadeIn {
     -webkit-animation: fadeIn 0.5s ease-in-out;
@@ -180,6 +202,8 @@ nav img {
   .nav-active {
     width: 100%;
     padding: 20px;
+    -webkit-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .not-active {
     width: 0%;
@@ -188,8 +212,16 @@ nav img {
 }
 
 @media (min-width: 393px) {
-  .navLink {
-    top: 10%;
+  nav img {
+    width: 80px;
+    height: 80px;
+  }
+  .menu {
+    width: 35px;
+    height: 35px;
+  }
+  .burger {
+    width: 20px;
   }
 }
 
@@ -211,6 +243,9 @@ nav img {
     background: none;
     color: black;
   }
+  .navLink li {
+    font-size: 16px;
+  }
   .not-active {
     position: relative;
     width: 100%;
@@ -224,8 +259,12 @@ nav img {
     right: 0%;
     position: absolute;
   }
-  .btn-user:nth-child(2) {
-    display: none;
+  nav img {
+    width: 100px;
+    height: 120px;
+  }
+  nav {
+    height: 10vh;
   }
 }
 
@@ -234,6 +273,13 @@ nav img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  nav {
+    height: 10vh;
+  }
+  nav img {
+    width: 100px;
+    height: 120px;
   }
   .menuHide {
     display: none;
@@ -246,6 +292,13 @@ nav img {
     position: relative;
     background: none;
     color: black;
+    -webkit-transition: none;
+    transition: none;
+    margin-left: 20px;
+  }
+  .navLink li {
+    font-size: 20px;
+    margin-left: 10px;
   }
   .not-active {
     position: relative;

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/Featured.css">
     <title>Schwart Haus</title>
     <link rel="shortcut icon" href="./img/logo1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- nav -->
     <nav>
@@ -28,15 +32,87 @@
                 <button class="btn-user">SIGN UP</button>
             </section>
         </ul>
-       
         <section class="menu menuHide">
             <section class="burger"></section>
             <section class="burger"></section>
             <section class="burger"></section>
         </section>
     </nav>
-     <!-- nav -->
+    <!-- nav -->
+    <!-- header -->
+    <section class="header">
+        <section class="header-con">
+            <section class="header-content">
+                <h1>Find Property Online</h1>
+                <form id="fillup" action="">
+                    <select class="input select" name="Any" id="">
+                        <option value="">BUY</option>
+                        <option value="">SELL</option>
+                        <option value="">RENT</option>
+                    </select>
+                    <select class="input propertyType" name="Any" id="">
+                        <option value="">CONDO</option>
+                        <option value="">APARTMENT</option>
+                        <option value="">HOUSING</option>
+                    </select>
+                    <input class="input" type="text" placeholder="Enter location, project, developer name">
+                    <button class="input searchBtn">search</button>
+                </form>
+            </section>
+        </section>
+        <section class="header-con">
+
+        </section>
+    </section>
+    <!-- header -->
+    <!-- project -->
+    <section class="featured-container featuredProject ">
+        <h1>Properties</h1>
+        <p>Check out some of our latest properties</p>
+        <section class="latestProject" id="project">
+            <section class="project">
+                <img src="./img/house/image1.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+            <section class="project">
+                <img src="./img/house/image2.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+            <section class="project">
+                <img src="./img/house/image3.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+            <section class="project">
+                <img src="./img/house/image4.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+            <section class="project">
+                <img src="/img/house/image5.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+            <section class="project">
+                <img src="./img/house/image6.png" alt="">
+                <h3>Property type: <span class="type">house</span></h3>
+                <h3>Bedrooms: <span class="BedroomsNo.">5</span></h3>
+                <h3>Price: <span class="Price">$12,000,000</span></h3>
+            </section>
+        </section>
+      
+    </section>
+    <!-- project -->
+
 
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@ const menuIcon = document.querySelector('.menu');
 const nav = document.querySelector('.navLink');
 const navLinks = document.querySelectorAll('.links');
 const burgerMenu = document.querySelectorAll('.burger');
+const project = document.querySelector('.latestProject')
 
 menuIcon.addEventListener('click', () => {
    if(nav.classList.contains('not-active')){
@@ -19,3 +20,4 @@ menuIcon.addEventListener('click', () => {
    }
 
 })
+
