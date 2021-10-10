@@ -113,9 +113,7 @@
     padding-top: 10px;
     grid-gap: 20px;
     height: auto;
-  }
-  .project {
-    width: 100%;
+    margin-top: 20px;
   }
   .featured-container {
     padding-left: 7px;
@@ -141,6 +139,9 @@
     padding: 10px;
     grid-gap: 10px;
   }
+  .project {
+    width: 350px;
+  }
 }
 
 @media (min-width: 483px) {
@@ -149,6 +150,9 @@
         grid-template-columns: auto auto;
     height: auto;
     padding: 10px;
+  }
+  .project {
+    width: 100%;
   }
 }
 
@@ -176,7 +180,7 @@
     grid-gap: 20px;
   }
   .featured-container h1 {
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 400;
     opacity: 0.8;
   }

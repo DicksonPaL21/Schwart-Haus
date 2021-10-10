@@ -106,9 +106,10 @@ sans-serif;
         padding-top: 10px;
         grid-gap:20px;
         height: auto;
+        margin-top: 20px;
     }
     .project{
-        width: 100%;
+       
     }
     .featured-container{
         padding-left: 7px;
@@ -124,6 +125,7 @@ sans-serif;
         font-size: $font-size-mobile;
         opacity: 0.7;
     }
+
 }
 @media(min-width:393px){
     .latestProject{
@@ -132,12 +134,18 @@ sans-serif;
         padding: 10px;
         grid-gap:10px;
     }
+    .project{
+        width: 350px;
+    }
 }
 @media(min-width:483px){
     .latestProject{
         grid-template-columns: auto auto ;
         height: auto;
         padding: 10px;
+    }
+    .project{
+        width: 100%;
     }
 }
 @media(min-width:768px){
@@ -159,7 +167,7 @@ sans-serif;
         grid-gap: 20px;
     }
     .featured-container h1{
-        font-size: 29px;
+        font-size: 20px;
         font-weight: 400;
         opacity: 0.8;
     }
