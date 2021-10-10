@@ -236,6 +236,11 @@ sans-serif;
         width: 100%;
     }
 }
+@media(min-width:738px){
+    .header{
+        height: auto;
+    }
+}
 @media(min-width:1200px){
      .header-content{
         height: 200px;
@@ -252,6 +257,7 @@ sans-serif;
     }
     .header{
         display: flex;
+        height: 90vh;
     }
     .input{
         height: 50px;
