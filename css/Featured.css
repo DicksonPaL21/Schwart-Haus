@@ -115,6 +115,9 @@
     height: auto;
     margin-top: 20px;
   }
+  .project {
+    width: 100%;
+  }
   .featured-container {
     padding-left: 7px;
     padding-right: 7px;

@@ -93,6 +93,11 @@ sans-serif;
         letter-spacing: 1px;
     }
 }
+@media(min-width:483px){
+    .card:nth-child(1),.card:nth-child(2),.card:nth-child(3){
+        background-position: bottom left;
+    }
+}
 @media(min-width:768px){
     .container{
         display: flex;
