@@ -1,0 +1,260 @@
+.searchPropertyCon {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.searchbox {
+  width: 350px;
+  height: 90vh;
+  background-color: rgba(128, 128, 128, 0.39);
+  position: relative;
+  padding: 20px;
+}
+
+.searchbox-content {
+  width: 100%;
+  height: 90vh;
+  right: 0;
+  position: absolute;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searchbox-content h1 {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.searchForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+select {
+  border: none;
+  padding: 10px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #1d1d1dbd;
+  border-radius: 5px;
+}
+
+.searchBtn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  color: #1d1d1dbd;
+}
+
+.searchBtn:hover {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.search-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+  height: 80vh;
+}
+
+.search-result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-list {
+  width: 350px;
+  height: 250px;
+  background-color: black;
+  color: white;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+@media (min-width: 320px) {
+  .searchPropertyCon {
+    height: auto;
+  }
+  .search-list {
+    height: auto;
+  }
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .search-list {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .project-list {
+    width: 290px;
+    height: 170px;
+  }
+  .searchbox-content {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-list {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .searchbox {
+    width: 350px;
+    height: 90vh;
+    background-color: rgba(128, 128, 128, 0.39);
+    position: absolute;
+    padding: 20px;
+  }
+  .searchPropertyCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .searchbox {
+    width: 350px;
+    height: 90vh;
+    background-color: rgba(128, 128, 128, 0.39);
+    position: relative;
+    padding: 20px;
+  }
+  .searchbox-content {
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    position: relative;
+  }
+  .search-list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    height: auto;
+  }
+  .project-list {
+    width: 200px;
+    height: 190px;
+    background-color: black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .searchPropertyCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .searchbox {
+    width: 350px;
+    height: 90vh;
+    background-color: rgba(128, 128, 128, 0.39);
+    position: relative;
+    padding: 20px;
+  }
+  .searchbox-content {
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    position: relative;
+  }
+  .search-list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    height: auto;
+  }
+  .project-list {
+    width: 275px;
+    height: 250px;
+    background-color: black;
+  }
+}
+/*# sourceMappingURL=searchProperty.css.map */

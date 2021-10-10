@@ -50,6 +50,22 @@ footer {
   text-align: left;
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.5px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.followUs li:hover, .quickLinks li:hover {
+  color: gray;
+}
+
+.followUs li:before, .quickLinks li:before {
+  content: '>';
+  position: absolute;
+  top: 0px;
+  left: -5%;
+  opacity: 0;
 }
 
 @media (min-width: 320px) {
@@ -97,6 +113,7 @@ footer {
   .footerImg img {
     width: 170px;
     height: 150px;
+    margin-left: -25px;
   }
 }
 

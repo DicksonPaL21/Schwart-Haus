@@ -2,7 +2,10 @@ const menuIcon = document.querySelector('.menu');
 const nav = document.querySelector('.navLink');
 const navLinks = document.querySelectorAll('.links');
 const burgerMenu = document.querySelectorAll('.burger');
-const project = document.querySelector('.latestProject')
+const project = document.querySelector('.latestProject');
+const navbar = document.getElementById('navbar')
+const commercialNav = document.querySelector('.commercial')
+
 
 menuIcon.addEventListener('click', () => {
    if(nav.classList.contains('not-active')){

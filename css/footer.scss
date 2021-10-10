@@ -39,11 +39,24 @@ footer{
     font-weight: 400;
     letter-spacing: 1px;
 }
-.followUs li,.quickLinks li,.newsLetter p{
+.followUs li, .quickLinks li,.newsLetter p{
     list-style: none;
     text-align: left;
     font-family: $mainfont;
     letter-spacing: 0.5px;
+    cursor: pointer;
+    position: relative;
+    transition: ease-in-out 0.2s;
+}
+.followUs li:hover,.quickLinks li:hover{
+   color: gray;
+}
+.followUs li:before,.quickLinks li:before{
+    content: '>';
+    position: absolute;
+    top: 0px;
+    left: -5%;
+    opacity: 0;
 }
 
 @media(min-width:320px){
@@ -65,6 +78,7 @@ footer{
     .footerImg img{
         width: 149px;
         height: 140px;
+       
     }
 }
 @media(min-width:768px){
@@ -84,6 +98,7 @@ footer{
     .footerImg img{
         width: 170px;
         height: 150px;
+        margin-left: -25px;
     }
 }
 @media(min-width:1200px){
