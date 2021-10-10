@@ -134,6 +134,7 @@ input[type=text]{
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
+    font-family: $mainfont;
   }
 
 @media(min-width:320px){
@@ -223,7 +224,7 @@ input[type=text]{
     }
     .searchbox-content{
         width:100%;
-        height: 90vh;
+        height: auto;
        top: 0;
         position:relative;
     }
@@ -254,7 +255,7 @@ input[type=text]{
     }
     .searchbox{
         width: 350px;
-        height: 90vh;
+        height:auto;
         background-color: rgba(128, 128, 128, 0.39);
         position:relative;
         padding: $containerpadding;
@@ -262,7 +263,7 @@ input[type=text]{
     }
     .searchbox-content{
         width:100%;
-        height: 90vh;
+        height: auto;
        top: 0;
         position:relative;
     }
