@@ -88,6 +88,111 @@ nav img {
     background: #1d1d1d;
     transition: all ease-in-out 0.5s;
 }
+@media(max-width:319px) {
+    .hide {
+        display: none;
+    }
+    .menu{
+        width: 30px;
+        height: 30px;
+    }
+    .burger{
+        width: 15px;
+    }
+
+    nav {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 999;
+
+    }
+    nav img{
+        width: 60px;
+        height: 80px;
+    }
+
+    .navLink {
+        display: block;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.774);
+        color: white;
+        padding: 20px;
+        z-index: -1;
+
+    }
+    .navLink li {
+        font-size: $font-size-mobile;
+    }
+
+    .user {
+        position: relative;
+        right: 0;
+    }
+    .btn-user{
+        font-size: $font-size-mobile;
+    }
+
+    .fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .fadeOut {
+        animation: fadeOut 0.5s ease-in-out;
+    }
+
+    .fadedMid {
+        opacity: 0;
+    }
+
+    .fadedTop {
+        transform: rotate(-140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    .fadedBot {
+        transform: rotate(140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .nav-active {
+        width: 100%;
+        padding: 20px;
+        transition: ease-in-out 0.2s;
+    }
+
+    .not-active {
+        width: 0%;
+        padding: 0;
+
+    }
+}
 
 @media(min-width:320px) {
     .hide {

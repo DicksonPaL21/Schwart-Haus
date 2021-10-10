@@ -20,6 +20,7 @@ sans-serif;
 }
 .featured-container p{
     font-size: $font-size-mobile;
+    opacity: 0.7;
 }
 .latestProject{
     width: 100%;
@@ -41,6 +42,7 @@ sans-serif;
     border-radius: 3px;
     overflow: hidden; 
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 .project:hover{
     transform: scale(0.98);
@@ -66,6 +68,28 @@ sans-serif;
     bottom:0;
     right: 17.4%;
 }
+@media(max-width:319px){
+    .latestProject{
+        grid-template-columns: auto;
+        padding: 5px;
+        padding-top: 10px;
+        grid-gap:20px;
+    }
+    .project{
+        width: 100%;
+    }
+    .featured-container{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .featured-container h1{
+        font-size: $font-size-desktop;
+    }
+    .featured-container p{
+        font-size: $font-size-mobile;
+        opacity: 0.7;
+    }
+}
 
 @media(min-width:320px){
     .latestProject{
@@ -86,6 +110,7 @@ sans-serif;
     }
     .featured-container p{
         font-size: $font-size-mobile;
+        opacity: 0.7;
     }
 }
 @media(min-width:393px){
@@ -93,6 +118,7 @@ sans-serif;
         grid-template-columns: auto ;
         height: auto;
         padding: 10px;
+        grid-gap:10px;
     }
 }
 @media(min-width:483px){
@@ -118,6 +144,7 @@ sans-serif;
 @media(min-width:1200px){
     .latestProject{
         grid-template-columns: auto auto auto;
+        grid-gap: 20px;
     }
     .featured-container h1{
         font-size: 25px;

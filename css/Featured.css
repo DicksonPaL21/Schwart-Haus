@@ -11,6 +11,7 @@
 
 .featured-container p {
   font-size: 16px;
+  opacity: 0.7;
 }
 
 .latestProject {
@@ -41,6 +42,7 @@
   overflow: hidden;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 .project:hover {
@@ -71,6 +73,30 @@
   right: 17.4%;
 }
 
+@media (max-width: 319px) {
+  .latestProject {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 5px;
+    padding-top: 10px;
+    grid-gap: 20px;
+  }
+  .project {
+    width: 100%;
+  }
+  .featured-container {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .featured-container h1 {
+    font-size: 20px;
+  }
+  .featured-container p {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+}
+
 @media (min-width: 320px) {
   .latestProject {
     -ms-grid-columns: auto;
@@ -91,6 +117,7 @@
   }
   .featured-container p {
     font-size: 16px;
+    opacity: 0.7;
   }
 }
 
@@ -100,6 +127,7 @@
         grid-template-columns: auto;
     height: auto;
     padding: 10px;
+    grid-gap: 10px;
   }
 }
 
@@ -133,6 +161,7 @@
   .latestProject {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    grid-gap: 20px;
   }
   .featured-container h1 {
     font-size: 25px;
